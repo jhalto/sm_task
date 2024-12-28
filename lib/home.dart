@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:sm_task/pages/categories.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 import 'package:sm_task/widgets/searchBar.dart';
 
@@ -7,11 +9,17 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+
+     return Scaffold(
+
+
       backgroundColor: Color(0xff11161F),
       body: Padding(
         padding: const EdgeInsets.only(left: 16,right: 16,top: 50),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,7 +80,7 @@ class Home extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(7),
                     color: Color(0xffFF3440),
-                   
+
                   ),
                   child: Center(
                     child: Container(
@@ -85,7 +93,22 @@ class Home extends StatelessWidget {
                   ),
                 )
               ],
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 2.0,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Categories",style: appStyleAkatab(18,white,FontWeight.w500),),
+                  Text("See More",style: appStyle(14,white),)
+                ],
+              ),
+            ),
+            SizedBox(height: 10,),
+            Categories(),
 
           ],
 
