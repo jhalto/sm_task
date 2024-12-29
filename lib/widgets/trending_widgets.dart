@@ -28,7 +28,7 @@ class TrendingWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 171,
       width: double.infinity,
 

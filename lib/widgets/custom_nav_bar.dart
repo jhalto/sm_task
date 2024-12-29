@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 
 class CustomNavBar extends StatefulWidget {
-  CustomNavBar({super.key});
+  const CustomNavBar({super.key});
 
   @override
   State<CustomNavBar> createState() => _CustomNavBarState();

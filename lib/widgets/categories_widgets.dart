@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 
@@ -14,7 +13,7 @@ class _CategoriesState extends State<Categories> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
 
       height: 34,
       child: Row(

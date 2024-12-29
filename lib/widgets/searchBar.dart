@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 
 class SearchBarStyle extends StatelessWidget {

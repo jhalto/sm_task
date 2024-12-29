@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 
@@ -51,7 +50,7 @@ class _SuggestionWidgetState extends State<SuggestionWidget> {
                   Image.asset("lib/images/frame3.png",fit: BoxFit.fill,),
                 ],
               )),
-              Container(
+              SizedBox(
                 height: 16,
 
                 child: Row(

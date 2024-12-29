@@ -155,7 +155,7 @@ class Home extends StatelessWidget {
               ),
               SizedBox(height: 16,),
               RecommendWidgets(),
-              SizedBox(height: 200,)
+              // SizedBox(height: 70,)
             ],
 
           ),

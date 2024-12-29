@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 
@@ -7,7 +6,7 @@ class ContinueWatchingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 151,
       width: double.infinity,
       child: Row(
