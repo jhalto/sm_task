@@ -113,6 +113,9 @@ class Home extends StatelessWidget {
             SizedBox(height: 20,),
             Container(
               width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14)
+              ),
               height: 181,
               child: SuggestionWidget(),
 
