@@ -95,9 +95,7 @@ class Home extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(left: 2.0,),
               child: Row(
@@ -112,6 +110,39 @@ class Home extends StatelessWidget {
             Categories(),
             SizedBox(height: 20,),
             SuggestionWidget(),
+            SizedBox(height: 20,),
+            Padding(
+              padding: const EdgeInsets.only(left: 2.0,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Trending Movies",style: appStyleAkatab(18,white,FontWeight.w500),),
+                  Text("See More",style: appStyle(14,white),)
+                ],
+              ),
+            ),
+            SizedBox(height: 20,),
+            Padding(
+              padding: const EdgeInsets.only(left: 2.0,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Continue Watching",style: appStyleAkatab(18,white,FontWeight.w500),),
+                  Text("See More",style: appStyle(14,white),)
+                ],
+              ),
+            ),
+            SizedBox(height: 20,),
+            Padding(
+              padding: const EdgeInsets.only(left: 2.0,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Recommend For You",style: appStyleAkatab(18,white,FontWeight.w500),),
+                  Text("See More",style: appStyle(14,white),)
+                ],
+              ),
+            ),
 
           ],
 
