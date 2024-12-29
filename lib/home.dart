@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sm_task/widgets/categories_widgets.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
+import 'package:sm_task/widgets/continue_watching_widgets.dart';
 import 'package:sm_task/widgets/searchBar.dart';
 import 'package:sm_task/widgets/suggestion_widget.dart';
+import 'package:sm_task/widgets/trending_widgets.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -122,6 +124,8 @@ class Home extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20,),
+            TrendingWidgets(),
+            SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(left: 2.0,),
               child: Row(
@@ -132,6 +136,8 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
+            ContinueWatchingWidget(),
             SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(left: 2.0,),
