@@ -111,12 +111,7 @@ class Home extends StatelessWidget {
             SizedBox(height: 10,),
             Categories(),
             SizedBox(height: 20,),
-            Container(
-              width: double.infinity,
-              height: 181,
-              child: SuggestionWidget(),
-
-            )
+            SuggestionWidget(),
 
           ],
 
