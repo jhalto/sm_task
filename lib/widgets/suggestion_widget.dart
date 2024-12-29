@@ -23,7 +23,11 @@ class _SuggestionWidgetState extends State<SuggestionWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(14),
           color: Colors.transparent,
+        ),
+
           child: Column(
             children: [
 
