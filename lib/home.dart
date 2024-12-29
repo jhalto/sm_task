@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sm_task/pages/categories.dart';
+import 'package:sm_task/widgets/categories_widgets.dart';
 import 'package:sm_task/widgets/common_widgets.dart';
 import 'package:sm_task/widgets/searchBar.dart';
+import 'package:sm_task/widgets/suggestion_widget.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -109,6 +110,13 @@ class Home extends StatelessWidget {
             ),
             SizedBox(height: 10,),
             Categories(),
+            SizedBox(height: 20,),
+            Container(
+              width: double.infinity,
+              height: 181,
+              child: SuggestionWidget(),
+
+            )
 
           ],
 

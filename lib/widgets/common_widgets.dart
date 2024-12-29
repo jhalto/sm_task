@@ -24,3 +24,4 @@ import 'package:google_fonts/google_fonts.dart';
   final Color white = Color(0xffFFFFFF);
   final Color cNST = Color(0xff969696);
   final Color cBC = Color(0xff221821);
+  final Color iBC = Color(0xff4F5055);
